@@ -192,8 +192,7 @@ Copyright (c) 2022 Bitcraze
           <upper>1e+16</upper>
         </limit>
         <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
+          <damping>0.004</damping>
         </dynamics>
       </axis>
     </joint>
@@ -207,8 +206,7 @@ Copyright (c) 2022 Bitcraze
           <upper>1e+16</upper>
         </limit>
         <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
+          <damping>0.004</damping>
         </dynamics>
       </axis>
     </joint>
@@ -222,8 +220,7 @@ Copyright (c) 2022 Bitcraze
           <upper>1e+16</upper>
         </limit>
         <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
+          <damping>0.004</damping>
         </dynamics>
       </axis>
     </joint>
@@ -237,8 +234,7 @@ Copyright (c) 2022 Bitcraze
           <upper>1e+16</upper>
         </limit>
         <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
+          <damping>0.004</damping>
         </dynamics>
       </axis>
     </joint>
