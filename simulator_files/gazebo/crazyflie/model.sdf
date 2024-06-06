@@ -56,9 +56,9 @@ Copyright (c) 2022 Bitcraze
         <pose>0 0 0 0 -0 0</pose>
         <mass>0.0008</mass>
         <inertia>
-          <ixx>0.000000002*70</ixx>
-          <iyy>0.000000167*70</iyy>
-          <izz>0.000000168*70</izz>
+          <ixx>8.33333E-09</ixx>
+          <iyy>1.08333E-07</iyy>
+          <izz>1.13333E-07</izz>
           <ixy>0</ixy>
           <ixz>0</ixz>
           <iyz>0</iyz>
@@ -80,9 +80,9 @@ Copyright (c) 2022 Bitcraze
         <pose>0 0 0 0 -0 0</pose>
         <mass>0.0008</mass>
         <inertia>
-          <ixx>0.000000002*50</ixx>
-          <iyy>0.000000167*50</iyy>
-          <izz>0.000000168*50</izz>
+          <ixx>8.33333E-09</ixx>
+          <iyy>1.08333E-07</iyy>
+          <izz>1.13333E-07</izz>
           <ixy>0</ixy>
           <ixz>0</ixz>
           <iyz>0</iyz>
@@ -104,9 +104,9 @@ Copyright (c) 2022 Bitcraze
         <pose>0 0 0 0 -0 0</pose>
         <mass>0.0008</mass>
         <inertia>
-          <ixx>0.000000002*50</ixx>
-          <iyy>0.000000167*50</iyy>
-          <izz>0.000000168*50</izz>
+          <ixx>8.33333E-09</ixx>
+          <iyy>1.08333E-07</iyy>
+          <izz>1.13333E-07</izz>
           <ixy>0</ixy>
           <ixz>0</ixz>
           <iyz>0</iyz>
@@ -128,9 +128,9 @@ Copyright (c) 2022 Bitcraze
         <pose>0 0 0 0 -0 0</pose>
         <mass>0.0008</mass>
         <inertia>
-          <ixx>0.000000002*50</ixx>
-          <iyy>0.000000167*50</iyy>
-          <izz>0.000000168*50</izz>
+          <ixx>8.33333E-09</ixx>
+          <iyy>1.08333E-07</iyy>
+          <izz>1.13333E-07</izz>
           <ixy>0</ixy>
           <ixz>0</ixz>
           <iyz>0</iyz>
