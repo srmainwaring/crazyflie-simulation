@@ -84,7 +84,7 @@ Copyright (c) 2022 Bitcraze
       </visual>
     </link>
     <link name="crazyflie/m2_prop">
-      <pose>-0.031 -0.031 0.021 0 0 0</pose>
+      <pose>-0.031 0.031 0.021 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 -0 0</pose>
         <mass>0.0008</mass>
@@ -117,7 +117,7 @@ Copyright (c) 2022 Bitcraze
       </visual>
     </link>
     <link name="crazyflie/m3_prop">
-      <pose>-0.031 0.031 0.021 0 0 0</pose>
+      <pose>0.031 0.031 0.021 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.0008</mass>
@@ -150,7 +150,7 @@ Copyright (c) 2022 Bitcraze
       </visual>
     </link>
     <link name="crazyflie/m4_prop">
-      <pose>0.031 0.031 0.021 0 0 0</pose>
+      <pose>-0.031 -0.031 0.021 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.0008</mass>
@@ -264,7 +264,7 @@ Copyright (c) 2022 Bitcraze
       <robotNamespace>crazyflie</robotNamespace>
       <jointName>crazyflie/m2_joint</jointName>
       <linkName>crazyflie/m2_prop</linkName>
-      <turningDirection>cw</turningDirection>
+      <turningDirection>ccw</turningDirection>
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
       <maxRotVelocity>2618</maxRotVelocity>
@@ -284,7 +284,7 @@ Copyright (c) 2022 Bitcraze
       <robotNamespace>crazyflie</robotNamespace>
       <jointName>crazyflie/m3_joint</jointName>
       <linkName>crazyflie/m3_prop</linkName>
-      <turningDirection>ccw</turningDirection>
+      <turningDirection>cw</turningDirection>
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
       <maxRotVelocity>2618</maxRotVelocity>
