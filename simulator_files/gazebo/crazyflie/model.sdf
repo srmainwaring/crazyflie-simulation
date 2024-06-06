@@ -107,7 +107,7 @@ Copyright (c) 2022 Bitcraze
         </geometry>
       </collision>
       <visual name="crazyflie/m2_visual">
-        <pose>0 0 0 0 -0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
