@@ -17,35 +17,35 @@
 #ifndef SYSTEM_PLUGIN_CRAZYFLIECONTROLLER_HH_
 #define SYSTEM_PLUGIN_CRAZYFLIECONTROLLER_HH_
 
-#include <ignition/gazebo/System.hh>
+#include <gz/sim/System.hh>
 #include <memory>
 #include <string>
-#include <ignition/msgs.hh>
-#include <ignition/gazebo/components/Component.hh>
-#include <ignition/gazebo/config.hh>
-#include "ignition/gazebo/Model.hh"
+#include <gz/msgs.hh>
+#include <gz/sim/components/Component.hh>
+#include <gz/sim/config.hh>
+#include "gz/sim/Model.hh"
 
 namespace crazyflie_controller
 {
   class CrazyflieController:
-    public ignition::gazebo::System,
-    public ignition::gazebo::ISystemConfigure,
-    public ignition::gazebo::ISystemPreUpdate
+    public gz::sim::System,
+    public gz::sim::ISystemConfigure,
+    public gz::sim::ISystemPreUpdate
   {
     public: CrazyflieController();
 
     public: ~CrazyflieController() override;
 
-    public: void Configure(const ignition::gazebo::Entity &_entity,
+    public: void Configure(const gz::sim::Entity &_entity,
                          const std::shared_ptr<const sdf::Element> &,
-                         ignition::gazebo::EntityComponentManager &_ecm,
-                         ignition::gazebo::EventManager &) override;
+                         gz::sim::EntityComponentManager &_ecm,
+                         gz::sim::EventManager &) override;
 
-    public: void PreUpdate(const ignition::gazebo::UpdateInfo &_info,
-                ignition::gazebo::EntityComponentManager &_ecm) override;
+    public: void PreUpdate(const gz::sim::UpdateInfo &_info,
+                gz::sim::EntityComponentManager &_ecm) override;
 
-    private: ignition::msgs::Actuators motorCommands;
-    private: ignition::gazebo::Model model{ignition::gazebo::kNullEntity};
+    private: gz::msgs::Actuators motorCommands;
+    private: gz::sim::Model model{gz::sim::kNullEntity};
 
   };
 }

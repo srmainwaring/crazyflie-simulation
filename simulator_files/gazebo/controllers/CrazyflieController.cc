@@ -17,17 +17,17 @@
 
 #include "CrazyflieController.hh"
 
-#include <ignition/plugin/Register.hh>
+#include <gz/plugin/Register.hh>
 
-#include <ignition/msgs/actuators.pb.h>
-#include "ignition/gazebo/components/Actuators.hh"
+#include <gz/msgs/actuators.pb.h>
+#include "gz/sim/components/Actuators.hh"
 
 
 using namespace crazyflie_controller;
 
-IGNITION_ADD_PLUGIN(
+GZ_ADD_PLUGIN(
     crazyflie_controller::CrazyflieController,
-    ignition::gazebo::System,
+    gz::sim::System,
     crazyflie_controller::CrazyflieController::ISystemConfigure,
     crazyflie_controller::CrazyflieController::ISystemPreUpdate)
 
@@ -42,22 +42,22 @@ CrazyflieController::~CrazyflieController()
 
 }
 
-void CrazyflieController::Configure(const ignition::gazebo::Entity &_entity,
+void CrazyflieController::Configure(const gz::sim::Entity &_entity,
     const std::shared_ptr<const sdf::Element> &_sdf,
-    ignition::gazebo::EntityComponentManager &_ecm,
-    ignition::gazebo::EventManager &/*_eventMgr*/)
+    gz::sim::EntityComponentManager &_ecm,
+    gz::sim::EventManager &/*_eventMgr*/)
 {
-    this->model = ignition::gazebo::Model(_entity);
+    this->model = gz::sim::Model(_entity);
       this->motorCommands.mutable_velocity()->Resize(
       4, 0);
 
   _ecm.CreateComponent(this->model.Entity(),
-                      ignition::gazebo::components::Actuators(this->motorCommands));
+                      gz::sim::components::Actuators(this->motorCommands));
 
 }
 
-void CrazyflieController::PreUpdate(const ignition::gazebo::UpdateInfo &_info,
-    ignition::gazebo::EntityComponentManager &_ecm)
+void CrazyflieController::PreUpdate(const gz::sim::UpdateInfo &_info,
+    gz::sim::EntityComponentManager &_ecm)
 {
 
   this->motorCommands.set_velocity(0, 3000);
@@ -66,12 +66,12 @@ void CrazyflieController::PreUpdate(const ignition::gazebo::UpdateInfo &_info,
   this->motorCommands.set_velocity(3, 3000);
 
   auto motorCommandsComponent =
-      _ecm.Component<ignition::gazebo::components::Actuators>(this->model.Entity());
+      _ecm.Component<gz::sim::components::Actuators>(this->model.Entity());
 
   motorCommandsComponent->SetData(this->motorCommands, 
-                    [](const ignition::msgs::Actuators &, const ignition::msgs::Actuators &){return false;});
+                    [](const gz::msgs::Actuators &, const gz::msgs::Actuators &){return false;});
 
-  _ecm.SetChanged(this->model.Entity(), ignition::gazebo::components::Actuators::typeId, ignition::gazebo::ComponentState::PeriodicChange);
+  _ecm.SetChanged(this->model.Entity(), gz::sim::components::Actuators::typeId, gz::sim::ComponentState::PeriodicChange);
 
   ignmsg << "set motors" << std::endl;
 }

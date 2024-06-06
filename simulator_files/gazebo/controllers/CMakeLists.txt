@@ -1,14 +1,14 @@
 cmake_minimum_required(VERSION 3.10.2 FATAL_ERROR)
 
-find_package(ignition-cmake2 REQUIRED)
+find_package(gz-cmake3 REQUIRED)
 
 project(CrazyflieController)
 
-find_package(ignition-plugin1 REQUIRED COMPONENTS register)
-set(IGN_PLUGIN_VER ${ignition-plugin1_VERSION_MAJOR})
+find_package(gz-plugin2 REQUIRED COMPONENTS register)
+set(GZ_PLUGIN_VER ${gz-plugin2_VERSION_MAJOR})
 
-find_package(ignition-gazebo6 REQUIRED)
+find_package(gz-sim8 REQUIRED)
 add_library(CrazyflieController SHARED CrazyflieController.cc)
 target_link_libraries(CrazyflieController
-  PRIVATE ignition-plugin${IGN_PLUGIN_VER}::ignition-plugin${IGN_PLUGIN_VER}
-  PRIVATE ignition-gazebo6::ignition-gazebo6  )
+  PRIVATE gz-plugin${GZ_PLUGIN_VER}::gz-plugin${GZ_PLUGIN_VER}
+  PRIVATE gz-sim8::gz-sim8  )
