@@ -251,7 +251,7 @@ Copyright (c) 2022 Bitcraze
       <motorConstant>1.28192e-08</motorConstant>
       <momentConstant>0.005964552</momentConstant>
       <commandSubTopic>gazebo/command/motor_speed</commandSubTopic>
-      <motorNumber>0</motorNumber>
+      <actuator_number>0</actuator_number>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
       <rollingMomentCoefficient>0.0000001</rollingMomentCoefficient>
       <motorSpeedPubTopic>motor_speed/0</motorSpeedPubTopic>
@@ -271,7 +271,7 @@ Copyright (c) 2022 Bitcraze
       <motorConstant>1.28192e-08</motorConstant>
       <momentConstant>0.005964552</momentConstant>
       <commandSubTopic>gazebo/command/motor_speed</commandSubTopic>
-      <motorNumber>1</motorNumber>
+      <actuator_number>1</actuator_number>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
       <rollingMomentCoefficient>0.0000001</rollingMomentCoefficient>
       <motorSpeedPubTopic>motor_speed/1</motorSpeedPubTopic>
@@ -291,7 +291,7 @@ Copyright (c) 2022 Bitcraze
       <motorConstant>1.28192e-08</motorConstant>
       <momentConstant>0.005964552</momentConstant>
       <commandSubTopic>gazebo/command/motor_speed</commandSubTopic>
-      <motorNumber>2</motorNumber>
+      <actuator_number>2</actuator_number>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
       <rollingMomentCoefficient>0.0000001</rollingMomentCoefficient>
       <motorSpeedPubTopic>motor_speed/2</motorSpeedPubTopic>
@@ -311,7 +311,7 @@ Copyright (c) 2022 Bitcraze
       <motorConstant>1.28192e-08</motorConstant>
       <momentConstant>0.005964552</momentConstant>
       <commandSubTopic>gazebo/command/motor_speed</commandSubTopic>
-      <motorNumber>3</motorNumber>
+      <actuator_number>3</actuator_number>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
       <rollingMomentCoefficient>0.000001</rollingMomentCoefficient>
       <motorSpeedPubTopic>motor_speed/3</motorSpeedPubTopic>
