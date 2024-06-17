@@ -103,25 +103,25 @@ Copyright (c) 2022 Bitcraze
         <rotorConfiguration>
           <rotor>
             <jointName>crazyflie/m1_joint</jointName>
-            <forceConstant>8.54858e-08</forceConstant>
+            <forceConstant>1.28192e-08</forceConstant>
             <momentConstant>0.016</momentConstant>
             <direction>1</direction>
           </rotor>
           <rotor>
             <jointName>crazyflie/m2_joint</jointName>
-            <forceConstant>8.54858e-08</forceConstant>
+            <forceConstant>1.28192e-08</forceConstant>
             <momentConstant>0.016</momentConstant>
             <direction>1</direction>
           </rotor>
           <rotor>
             <jointName>crazyflie/m3_joint</jointName>
-            <forceConstant>8.54858e-08</forceConstant>
+            <forceConstant>1.28192e-08</forceConstant>
             <momentConstant>0.016</momentConstant>
             <direction>-1</direction>
           </rotor>
           <rotor>
             <jointName>crazyflie/m4_joint</jointName>
-            <forceConstant>8.54858e-08</forceConstant>
+            <forceConstant>1.28192e-08</forceConstant>
             <momentConstant>0.016</momentConstant>
             <direction>-1</direction>
           </rotor>

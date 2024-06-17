@@ -248,11 +248,8 @@ Copyright (c) 2022 Bitcraze
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
       <maxRotVelocity>2618</maxRotVelocity>
-      <!--
       <motorConstant>1.28192e-08</motorConstant>
-      <momentConstant>0.005964552</momentConstant>
-      -->
-      <motorConstant>8.54858e-08</motorConstant>
+      <!-- <momentConstant>0.005964552</momentConstant> -->
       <momentConstant>0.016</momentConstant>
       <commandSubTopic>gazebo/command/motor_speed</commandSubTopic>
       <actuator_number>0</actuator_number>
@@ -271,12 +268,9 @@ Copyright (c) 2022 Bitcraze
       <turningDirection>ccw</turningDirection>
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
-      <maxRotVelocity>2618</maxRotVelocity>
-      <!--
+      <maxRotVelocity>2618</maxRotVelocity> 
       <motorConstant>1.28192e-08</motorConstant>
-      <momentConstant>0.005964552</momentConstant>
-      -->
-      <motorConstant>8.54858e-08</motorConstant>
+      <!-- <momentConstant>0.005964552</momentConstant> -->
       <momentConstant>0.016</momentConstant>
       <commandSubTopic>gazebo/command/motor_speed</commandSubTopic>
       <actuator_number>1</actuator_number>
@@ -296,11 +290,8 @@ Copyright (c) 2022 Bitcraze
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
       <maxRotVelocity>2618</maxRotVelocity>
-      <!--
       <motorConstant>1.28192e-08</motorConstant>
-      <momentConstant>0.005964552</momentConstant>
-      -->
-      <motorConstant>8.54858e-08</motorConstant>
+      <!-- <momentConstant>0.005964552</momentConstant> -->
       <momentConstant>0.016</momentConstant>
       <commandSubTopic>gazebo/command/motor_speed</commandSubTopic>
       <actuator_number>2</actuator_number>
@@ -320,11 +311,8 @@ Copyright (c) 2022 Bitcraze
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
       <maxRotVelocity>2618</maxRotVelocity>
-      <!--
       <motorConstant>1.28192e-08</motorConstant>
-      <momentConstant>0.005964552</momentConstant>
-      -->
-      <motorConstant>8.54858e-08</motorConstant>
+      <!-- <momentConstant>0.005964552</momentConstant> -->
       <momentConstant>0.016</momentConstant>
       <commandSubTopic>gazebo/command/motor_speed</commandSubTopic>
       <actuator_number>3</actuator_number>
