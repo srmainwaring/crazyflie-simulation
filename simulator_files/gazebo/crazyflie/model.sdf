@@ -248,14 +248,18 @@ Copyright (c) 2022 Bitcraze
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
       <maxRotVelocity>2618</maxRotVelocity>
+      <!--
       <motorConstant>1.28192e-08</motorConstant>
       <momentConstant>0.005964552</momentConstant>
+      -->
+      <motorConstant>8.54858e-08</motorConstant>
+      <momentConstant>0.016</momentConstant>
       <commandSubTopic>gazebo/command/motor_speed</commandSubTopic>
       <actuator_number>0</actuator_number>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
-      <rollingMomentCoefficient>0.0000001</rollingMomentCoefficient>
+      <rollingMomentCoefficient>1.0e-6</rollingMomentCoefficient>
       <motorSpeedPubTopic>motor_speed/0</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>150</rotorVelocitySlowdownSim>
+      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
       <motorType>velocity</motorType>
     </plugin>
     <plugin
@@ -268,14 +272,18 @@ Copyright (c) 2022 Bitcraze
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
       <maxRotVelocity>2618</maxRotVelocity>
+      <!--
       <motorConstant>1.28192e-08</motorConstant>
       <momentConstant>0.005964552</momentConstant>
+      -->
+      <motorConstant>8.54858e-08</motorConstant>
+      <momentConstant>0.016</momentConstant>
       <commandSubTopic>gazebo/command/motor_speed</commandSubTopic>
       <actuator_number>1</actuator_number>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
-      <rollingMomentCoefficient>0.0000001</rollingMomentCoefficient>
+      <rollingMomentCoefficient>1.0e-6</rollingMomentCoefficient>
       <motorSpeedPubTopic>motor_speed/1</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>150</rotorVelocitySlowdownSim>
+      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
       <motorType>velocity</motorType>
     </plugin>
     <plugin
@@ -288,14 +296,18 @@ Copyright (c) 2022 Bitcraze
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
       <maxRotVelocity>2618</maxRotVelocity>
+      <!--
       <motorConstant>1.28192e-08</motorConstant>
       <momentConstant>0.005964552</momentConstant>
+      -->
+      <motorConstant>8.54858e-08</motorConstant>
+      <momentConstant>0.016</momentConstant>
       <commandSubTopic>gazebo/command/motor_speed</commandSubTopic>
       <actuator_number>2</actuator_number>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
-      <rollingMomentCoefficient>0.0000001</rollingMomentCoefficient>
+      <rollingMomentCoefficient>1.0e-6</rollingMomentCoefficient>
       <motorSpeedPubTopic>motor_speed/2</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>150</rotorVelocitySlowdownSim>
+      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
       <motorType>velocity</motorType>
     </plugin>
     <plugin
@@ -308,73 +320,24 @@ Copyright (c) 2022 Bitcraze
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
       <maxRotVelocity>2618</maxRotVelocity>
+      <!--
       <motorConstant>1.28192e-08</motorConstant>
       <momentConstant>0.005964552</momentConstant>
+      -->
+      <motorConstant>8.54858e-08</motorConstant>
+      <momentConstant>0.016</momentConstant>
       <commandSubTopic>gazebo/command/motor_speed</commandSubTopic>
       <actuator_number>3</actuator_number>
       <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
-      <rollingMomentCoefficient>0.000001</rollingMomentCoefficient>
+      <rollingMomentCoefficient>1.0e-6</rollingMomentCoefficient>
       <motorSpeedPubTopic>motor_speed/3</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>150</rotorVelocitySlowdownSim>
+      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
       <motorType>velocity</motorType>
     </plugin>
     <plugin
       filename="gz-sim-odometry-publisher-system"
       name="gz::sim::systems::OdometryPublisher">
       <dimensions>3</dimensions>
-    </plugin>
-
-    <plugin name="ArduPilotPlugin"
-      filename="ArduPilotPlugin">
-      <fdm_addr>127.0.0.1</fdm_addr>
-      <fdm_port_in>9002</fdm_port_in>
-      <connectionTimeoutMaxCount>5</connectionTimeoutMaxCount>
-      <lock_step>1</lock_step>
-      <have_32_channels>0</have_32_channels>
-      <modelXYZToAirplaneXForwardZDown degrees="true">0 0 0 180 0 0</modelXYZToAirplaneXForwardZDown>
-      <gazeboXYZToNED degrees="true">0 0 0 180 0 90</gazeboXYZToNED>
-      <imuName>crazyflie/body::imu_sensor</imuName>
-
-      <control channel="0">
-        <jointName>crazyflie/m1_joint</jointName>
-        <multiplier>2618</multiplier>
-        <offset>0</offset>
-        <servo_min>1000</servo_min>
-        <servo_max>2000</servo_max>
-        <type>ACTUATORS</type>
-        <actuators_topic>/crazyflie/gazebo/command/motor_speed</actuators_topic>
-      </control>
-
-      <control channel="1">
-        <jointName>crazyflie/m2_joint</jointName>
-        <multiplier>2618</multiplier>
-        <offset>0</offset>
-        <servo_min>1000</servo_min>
-        <servo_max>2000</servo_max>
-        <type>ACTUATORS</type>
-        <actuators_topic>/crazyflie/gazebo/command/motor_speed</actuators_topic>
-      </control>
-
-      <control channel="2">
-        <jointName>crazyflie/m3_joint</jointName>
-        <multiplier>2618</multiplier>
-        <offset>0</offset>
-        <servo_min>1000</servo_min>
-        <servo_max>2000</servo_max>
-        <type>ACTUATORS</type>
-        <actuators_topic>/crazyflie/gazebo/command/motor_speed</actuators_topic>
-      </control>
-
-      <control channel="3">
-        <jointName>crazyflie/m4_joint</jointName>
-        <multiplier>2618</multiplier>
-        <offset>0</offset>
-        <servo_min>1000</servo_min>
-        <servo_max>2000</servo_max>
-        <type>ACTUATORS</type>
-        <actuators_topic>/crazyflie/gazebo/command/motor_speed</actuators_topic>
-      </control>
-
     </plugin>
   </model>
 </sdf>
